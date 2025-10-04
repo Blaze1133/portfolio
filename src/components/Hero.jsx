@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import dp from "../../assets/dp.jpg";
-import dp1 from "../../assets/dpimg.jpeg";
+import dp from "../assets/dp.jpg";
+import dp1 from "../assets/dpimg.jpeg";
 import "./hero.css";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
