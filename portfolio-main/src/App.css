@@ -1,0 +1,50 @@
+/* Add this to your App.css or index.css */
+
+/* Global reset and base styles */
+
+/* Main app container with gradient background */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  /* Alternative gradient option - uncomment to use */
+  /* background: linear-gradient(
+    to bottom right,
+    #1a1f35 0%,
+    #242b45 50%,
+    #1a1f35 100%
+  ); */
+  position: relative;
+}
+
+/* Optional: Add subtle animated gradient */
+.App::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+      circle at 20% 50%,
+      rgba(41, 196, 183, 0.05) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(46, 124, 176, 0.05) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Ensure content is above the gradient overlay */
+.App > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
