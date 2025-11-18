@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Education from "./components/Education";
 import { Toaster } from "sonner";
 import "./App.css";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 const App = () => {
   return (
     <div className="App">
