@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import dp from "../assets/dp.jpg";
 import dp1 from "../assets/dpimg.jpeg";
 import "./Hero.css";
 import { gsap } from "gsap";

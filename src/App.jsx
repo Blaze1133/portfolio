@@ -8,7 +8,6 @@ import Footer from "./components/Footer";
 import Education from "./components/Education";
 import { Toaster } from "sonner";
 import "./App.css";
-import { Analytics } from "@vercel/analytics/next";
 const App = () => {
   return (
     <div className="App">
@@ -21,8 +20,6 @@ const App = () => {
         <Contact />
         <Footer />
       </div>
-      <Analytics />
-
       <Toaster position="top-right" richColors />
     </div>
   );
