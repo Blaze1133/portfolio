@@ -43,21 +43,6 @@ const About = () => {
         <h1>About Me</h1>
       </div>
       <div className="about-section">
-        {/* Animated decorative element instead of image */}
-        <div className="left-section">
-          <div className="code-illustration">
-            <div className="floating-orb orb-1"></div>
-            <div className="floating-orb orb-2"></div>
-            <div className="floating-orb orb-3"></div>
-            <div className="code-lines">
-              <div className="code-line line-1"></div>
-              <div className="code-line line-2"></div>
-              <div className="code-line line-3"></div>
-              <div className="code-line line-4"></div>
-            </div>
-          </div>
-        </div>
-
         <div className="right-section">
           <div className="summary">
             <p>
