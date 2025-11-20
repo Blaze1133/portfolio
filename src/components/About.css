@@ -44,14 +44,15 @@
   gap: 100px;
   width: 100%;
   align-items: center;
+  justify-content: center;
 }
-
 
 .about .right-section {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  flex: 1;
+  max-width: 800px;
+  text-align: left;
 }
 
 .summary {
@@ -71,6 +72,7 @@
 .social-links {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 20px;
 }
 
