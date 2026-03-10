@@ -58,52 +58,41 @@ const Projects = () => {
 
   return (
     <div id="projects" className="projects">
-      <div className="project-title" ref={titleRef}>
-        My Projects
+      <div className="projects-header" ref={titleRef}>
+        <h2 className="project-title">My Projects</h2>
+        <p className="project-subtitle">Showcasing my latest work</p>
       </div>
-      <div className="project-container">
+      
+      <div className="project-grid">
         {data.map((item, index) => {
           return (
             <div
               key={item.id}
-              className="project-card"
+              className="project-item"
               ref={(el) => (cardsRef.current[index] = el)}
             >
-              {/* Image container with overlay effect */}
-              <div className="project-img-container">
-                <img src={item.img} alt={item.title} className="project-img" />
-              </div>
-
-              {/* Card content */}
-              <div className="card-content">
-                <h2 className="card-title">{item.title}</h2>
-                <p className="card-description">{item.description}</p>
-                <div className="card-links">
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="card-link"
-                  >
-                    Live Demo
-                  </a>
-                  {/* Optional: Add GitHub link if you have it in your data */}
-                  {item.github && (
-                    <a
-                      href={item.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="card-link"
-                      style={{
-                        background: "rgba(30, 41, 59, 0.8)",
-                        border: "1px solid rgba(41, 196, 183, 0.3)",
-                      }}
-                    >
-                      GitHub
-                    </a>
-                  )}
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                <div className="project-image-wrapper">
+                  <img src={item.img} alt={item.title} className="project-image" />
+                  <div className="project-overlay">
+                    <div className="project-info">
+                      <h3 className="project-name">{item.title}</h3>
+                      <p className="project-desc">{item.description}</p>
+                      <span className="view-project">
+                        View Project
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                          <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           );
         })}

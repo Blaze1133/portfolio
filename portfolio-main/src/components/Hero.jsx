@@ -27,11 +27,11 @@ const hero = () => {
       <img src={dp1} alt="image of arigato" className="dp-image" />
       <h1>
         {" "}
-        <span>I'm Manikanta Tej</span>, Full Stack Developer, based in India
+        <span>I'm Manikanta Tej</span>, Full Stack Developer & AI Engineer based in India
       </h1>
       <p>
-        A Full-Stack Developer specializing in the MERN stack and Microsoft
-        Azure, with experience building scalable applications and automating
+        A Full-Stack Developer specializing in Node.js, React, FastAPI, and Agentic AI,
+        with expertise in building intelligent, scalable applications
       </p>
       <div className="hero-action">
         <a
@@ -43,7 +43,7 @@ const hero = () => {
           <div className="hero-connect">Connect With Me</div>
         </a>
         <a
-          href="https://drive.google.com/file/d/1YNrnT3BT73LqMt11nBoNKtJdDnhQtsyn/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1YyP7poqxibP90ypPZrJ8fC0S4XYY1xk_/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: "none" }}

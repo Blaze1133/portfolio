@@ -252,8 +252,8 @@
 .icons {
   display: flex;
   gap: 80px;
-  animation: scroll 25s linear infinite;
-  width: fit-content;
+  animation: scroll 20s linear infinite;
+  will-change: transform;
 }
 
 .tech-icon {
